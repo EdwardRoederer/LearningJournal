@@ -1,0 +1,141 @@
+/* Validated @ http://jigsaw.w3.org/css-validator on xx-xx-xxxx */
+
+/* *****************************************
+Base Element Styles
+****************************************** */
+* {
+  box-sizing: border-box;                                                        /*The value border-box forces the padding and borders into the width and height instead of expanding it */
+}
+
+header {
+  border: 1em solid lightgray;
+  outline-style:solid;
+  margin-top: 1em;
+}
+
+body {
+  font-family:arial, verdana, helvetica;
+  padding: 1em;
+}
+
+footer {
+  background-color:white;
+}
+
+/* *****************************************
+Base Layout Styles
+******************************************* */
+
+
+/* Container Styles */
+
+.wrapper {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 0 auto;
+  border-style: solid;
+  border-width: thick;
+}
+
+.mainContentContainer {
+  margin: 0px auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color:lightgray;
+}
+
+.mainHeaderNav {
+  margin: 0;
+  padding: 0;
+
+}
+
+.myProfileImgContainer {
+  border: 5px solid gray;
+  margin: 5px;
+  margin-top: 5px;
+  padding-top: 2em;
+  padding-bottom: .5em;
+}
+
+.myProfileListContainer {
+  margin-left: 1em;
+  border: 5px solid gray;
+  padding: 5px;
+  margin: 5px;
+}
+
+.myBioContainer {
+  border: 5px solid gray;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
+}
+
+/* Content Element Styles */
+
+.mainHeaderContent {
+  background-color:lightgray;
+  margin: 0;
+  padding-top: 1em;
+  text-align: center;
+  padding-bottom: 1em;
+
+}
+
+
+.mainHeaderNav li {
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+  list-style: none;
+  background: lightgray;
+
+}
+
+.myProfileImgContent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.myProfileListContent {
+  padding-left: 1em;
+  list-style:disc;
+}
+
+.myBioTextContent {
+  border: 5px solid gray;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
+}
+
+/* *****************************************
+  Media Queries
+******************************************* */
+
+@media (min-width: 769px)     {
+    body {
+      width: 70%;
+      margin: 1em auto;
+      max-width: 1000px;
+    }
+    .wrapper {
+      min-height: calc(100vh - 12.222px);
+    }
+
+    .mainHeaderNav {
+      padding: 0;
+    }
+
+    .mainHeaderNav li {
+    	margin: .5em;
+      list-style: none;
+      display: inline-block;
+      text-align: center;
+
+    }
+
+  }
