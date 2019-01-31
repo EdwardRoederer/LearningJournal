@@ -8,7 +8,6 @@ Base Element Styles
 }
 
 header {
-  border: 1em solid lightgray;
   outline-style:solid;
   margin-top: 1em;
 }
@@ -16,10 +15,11 @@ header {
 body {
   font-family:arial, verdana, helvetica;
   padding: 1em;
+  min-width: 300px;
 }
 
 footer {
-  background-color:white;
+
 }
 
 /* *****************************************
@@ -30,24 +30,43 @@ Base Layout Styles
 /* Container Styles */
 
 .wrapper {
-  padding-left: 1em;
-  padding-right: 1em;
   margin-top: 0 auto;
   border-style: solid;
   border-width: thick;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.mainContentContainer {
-  margin: 0px auto;
+#mainContentContainer {
   padding-top: 1px;
   padding-bottom: 1px;
-  background-color:lightgray;
 }
 
-.mainHeaderNav {
-  margin: 0;
-  padding: 0;
+/* Content Styles */
 
+.content {
+  background-color:lightgray;
+  /* margin: 0; */
+  padding-top: 1em;
+  /* text-align: center; */
+  padding-bottom: 1em;
+}
+
+.center {
+  margin: 0;
+  text-align: center;
+}
+
+
+#navbar {
+margin: .5em;
+list-style: none;
+text-align: center;
+padding-left: 0;
+}
+
+#navbar li {
+  list-style: none;
 }
 
 .myProfileImgContainer {
@@ -74,24 +93,6 @@ Base Layout Styles
 
 /* Content Element Styles */
 
-.mainHeaderContent {
-  background-color:lightgray;
-  margin: 0;
-  padding-top: 1em;
-  text-align: center;
-  padding-bottom: 1em;
-
-}
-
-
-.mainHeaderNav li {
-  margin: 0;
-  padding: 4px;
-  text-align: center;
-  list-style: none;
-  background: lightgray;
-
-}
 
 .myProfileImgContent {
   display: block;
@@ -114,28 +115,70 @@ Base Layout Styles
 
 /* *****************************************
   Media Queries
-******************************************* */
-
-@media (min-width: 769px)     {
-    body {
-      width: 70%;
-      margin: 1em auto;
-      max-width: 1000px;
-    }
-    .wrapper {
-      min-height: calc(100vh - 12.222px);
-    }
-
-    .mainHeaderNav {
-      padding: 0;
-    }
-
-    .mainHeaderNav li {
-    	margin: .5em;
+****************************************** */
+/* @media (min-width: 1px)    {
+    #navbar {
+      margin: .5em;
       list-style: none;
-      display: inline-block;
       text-align: center;
-
+      padding-left: 0;
     }
+} */
 
+
+
+@media (min-width: 880px)     {
+  body {
+    width: 70%;
+    margin: 1em auto;
+    max-width: 1000px;
+
+  }
+  .wrapper {
+    min-height: calc(100vh - 12.222px);
+  }
+                                                                            /* This stuff from here down was added to for fun to make a visible impact of screen  */
+  header,
+  .mainHeaderNav li,
+  .mainContentContainer {
+    background-color: white;
+    border-color: white;
+  }
+
+  /* Style the navbar */
+
+  #navbar {
+    overflow: hidden;
+    padding-left: 0;
+  }
+
+  #navbar li {
+    display: inline-block;
+  }
+
+  #navbar a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    margin: auto;
+    text-decoration: none;
+  }
+
+
+/* Page content */
+.content {
+  background-color:white;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
   }

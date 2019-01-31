@@ -17,24 +17,20 @@
 <body>                                                                          <!-- Defines the body of the document; Includes all Web page content -->
   <div class ="wrapper">
 
-  <header id="mainHeader">                          <!-- Represents a container for introductory content or a set of navigational links -->
-    <div class="mainHeaderContent">
-      <h1 class="mainHeaderContent">Learning Journal</h1>
-      <ul class="mainHeaderNav">
-        <!-- <li><a href="https://www.roblox.com/">www.roblox.com</a></li> -->
-        <li><a href="https://www.roblox.com/">Software Development</a></li>
-        <li><a href="https://www.roblox.com/">Lean Six-Sigma Healthcare</a></li>
-        <li><a href="https://www.roblox.com/">Investing</a></li>
-        <li><a href="https://www.roblox.com/">Martial Arts</a></li>
-        <li><a href="https://www.roblox.com/">Gardening</a></li>
-        <li><a href="https://www.roblox.com/">Home Improvement</a></li>
+  <header>                                                                      <!-- Represents a container for introductory content or a set of navigational links -->
+    <div class="content">
+      <h1 class="center">Learning Journal</h1>
+      <ul id="navbar">
+        <li><a href="#">Software Development</a></li>
+        <li><a href="#">Lean Six-Sigma Healthcare</a></li>
+        <li><a href="#/">Investing</a></li>
       </ul>
     </div>
   </header>
 
   <hr/>
 
-  <div class="mainContentContainer">                                                     <!-- Creates an element for the main content of the page and links it to a css class "mainContent"-->
+  <div id=mainContentContainer class="content">                                                     <!-- Creates an element for the main content of the page and links it to a css class "mainContent"-->
     <div class="myProfileImgContainer">
       <img class="myProfileImgContent" src="img/Edward.jpg" alt="The author of this page"/>
       <br>
@@ -43,7 +39,6 @@
     <div class="myProfileListContainer">
       Activities
       <ul id="myProfileList" class="myProfileListContent">
-        <!-- <li><a href="https://www.roblox.com/">www.roblox.com</a></li> -->
         <li>Record an Entry</li>
         <li>Take a Quiz</li>
         <li>Add Vocabulary</li>
@@ -60,6 +55,8 @@
     <h6>This is the footer for the body</h6>
   </footer>
   </div>
+
+  <script src="js/scripts.js"></script>
 
 </body>
 </html>
