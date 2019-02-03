@@ -12,7 +12,9 @@ var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
+    navbar.classList.add("wrapper");
   } else {
     navbar.classList.remove("sticky");
+    navbar.classList.remove("wrapper");
   }
 }

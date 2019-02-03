@@ -1,11 +1,10 @@
 /* Validated @ http://jigsaw.w3.org/css-validator on xx-xx-xxxx */
 
-/* *****************************************
-Base Element Styles
-****************************************** */
 * {
   box-sizing: border-box;                                                        /*The value border-box forces the padding and borders into the width and height instead of expanding it */
 }
+
+/* Element Styles  */
 
 header {
   outline-style:solid;
@@ -15,19 +14,14 @@ header {
 body {
   font-family:arial, verdana, helvetica;
   padding: 1em;
-  min-width: 300px;
+  min-width: 320px;
 }
 
 footer {
 
 }
 
-/* *****************************************
-Base Layout Styles
-******************************************* */
-
-
-/* Container Styles */
+/* Class Styles */
 
 .wrapper {
   margin-top: 0 auto;
@@ -37,18 +31,9 @@ Base Layout Styles
   padding-right: 1em;
 }
 
-#mainContentContainer {
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
-/* Content Styles */
-
 .content {
   background-color:lightgray;
-  /* margin: 0; */
   padding-top: 1em;
-  /* text-align: center; */
   padding-bottom: 1em;
 }
 
@@ -57,6 +42,31 @@ Base Layout Styles
   text-align: center;
 }
 
+.grayBorder {
+  border: 5px solid gray;
+}
+
+.commonMarginPadding {
+  margin: 5px;
+  padding: 5px;
+}
+
+.myProfileListContent {
+  padding-left: 1em;
+  list-style:disc;
+}
+
+.lightBackground {
+  background-color: white;
+}
+
+
+/* ID Styles */
+
+#mainContentContainer {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
 
 #navbar {
 margin: .5em;
@@ -69,76 +79,39 @@ padding-left: 0;
   list-style: none;
 }
 
-.myProfileImgContainer {
+#myProfileImgContainer {
   border: 5px solid gray;
   margin: 5px;
   margin-top: 5px;
   padding-top: 2em;
-  padding-bottom: .5em;
+  padding-bottom: 2em;
 }
 
-.myProfileListContainer {
-  margin-left: 1em;
-  border: 5px solid gray;
-  padding: 5px;
-  margin: 5px;
-}
-
-.myBioContainer {
-  border: 5px solid gray;
-  padding: 5px;
-  margin: 5px;
-  background-color: white;
-}
-
-/* Content Element Styles */
-
-
-.myProfileImgContent {
+#myProfileImgContent {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
 
-.myProfileListContent {
-  padding-left: 1em;
-  list-style:disc;
-}
-
-.myBioTextContent {
-  border: 5px solid gray;
-  padding: 5px;
-  margin: 5px;
-  background-color: white;
-}
 
 /* *****************************************
   Media Queries
 ****************************************** */
-/* @media (min-width: 1px)    {
-    #navbar {
-      margin: .5em;
-      list-style: none;
-      text-align: center;
-      padding-left: 0;
-    }
-} */
-
-
 
 @media (min-width: 880px)     {
   body {
-    width: 70%;
+    width: 80%;
     margin: 1em auto;
-    max-width: 1000px;
+    max-width: 1500px;
 
   }
   .wrapper {
-    min-height: calc(100vh - 12.222px);
+    /* min-height: calc(100vh - 12.222px); */
   }
                                                                             /* This stuff from here down was added to for fun to make a visible impact of screen  */
   header,
+  .content,
   .mainHeaderNav li,
   .mainContentContainer {
     background-color: white;
@@ -148,8 +121,10 @@ padding-left: 0;
   /* Style the navbar */
 
   #navbar {
-    overflow: hidden;
+    /* overflow: hidden; */
+    margin: 0;
     padding-left: 0;
+    border-width: thin;
   }
 
   #navbar li {
@@ -166,19 +141,20 @@ padding-left: 0;
 
 
 /* Page content */
-.content {
-  background-color:white;
-}
+
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
+  left: 0;
+  background-color: white;
   width: 100%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+ .sticky,
+.content {
+  padding-top: 30px;
 }
   }
