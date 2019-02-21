@@ -118,6 +118,20 @@ padding-left: 0;
     border-color: white;
   }
 
+  #myProfileImgContainer,
+  /* #myProfileImgContent, */
+  .swing {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  #myProfileListContainer {
+    border-style:none;
+  }
+
   /* Style the navbar */
 
   #navbar {
@@ -157,4 +171,12 @@ padding-left: 0;
 .content {
   padding-top: 30px;
 }
-  }
+
+
+  /* Testing for 2/4/19 */
+
+
+
+
+
+}
