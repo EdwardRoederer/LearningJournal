@@ -4,37 +4,36 @@
   box-sizing: border-box;                                                        /*The value border-box forces the padding and borders into the width and height instead of expanding it */
 }
 
-/* Element Styles  */
-
-header {
-  outline-style:solid;
-  margin-top: 1em;
-}
+/*************************************
+Element Styles
+**************************************/
 
 body {
+  background-blend-mode: overlay;
+  background-color: #955829;
+  background-image: url("../img/print.png");
+  background-size: cover;
   font-family:arial, verdana, helvetica;
   padding: 1em;
   min-width: 320px;
 }
 
-footer {
-
+header {
+  background-image: linear-gradient(sienna, lightyellow);
+  border-bottom: solid 2px;
+  margin-top: 0;
+  padding: .5em 0 2.8em 0;
 }
 
-/* Class Styles */
 
-.wrapper {
-  margin-top: 0 auto;
-  border-style: solid;
-  border-width: thick;
-  padding-left: 1em;
-  padding-right: 1em;
-}
+/*************************************
+Class Styles
+**************************************/
 
-.content {
-  background-color:lightgray;
-  padding-top: 1em;
-  padding-bottom: 1em;
+.activityBtn {
+  margin: 20px;
+  padding: 10px;
+  width:80%;
 }
 
 .center {
@@ -47,40 +46,137 @@ footer {
 }
 
 .commonMarginPadding {
-  margin: 5px;
-  padding: 5px;
+  margin: 2px;
+  padding: 2px;
 }
 
-.myProfileListContent {
-  padding-left: 1em;
-  list-style:disc;
+.content {
+  background-color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .lightBackground {
   background-color: white;
 }
 
+.mobileBtnCenter {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
 
-/* ID Styles */
+.mobileCenter {
+  text-align: center;
+}
+
+.mobileJustify {
+  text-align: justify;
+}
+
+.navbar {
+  list-style: none;
+  margin: .5em;
+  padding-left: 0;
+  text-align: center;
+}
+
+.navbar li {
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 14px;
+}
+
+.navbar li:not(:first-child) {
+  display: none;
+}
+
+.navbar li:first-child {
+    background-color: white;
+    float: left;
+    padding: 9px 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar li a:first-child {
+  color: black;
+}
+
+.req {
+  float: left;
+  margin: 2px 0px 0px 20px;
+}
+
+.reqClar {
+  color: red;
+  display:none;
+  font-style: italic;
+}
+
+.reqDesc {
+  overflow: hidden;
+  padding: 0px 0px 0px 10px;
+}
+
+/* .responsive {
+  float: none;
+  display: block;
+  text-align: left;
+} */
+
+.sticky {
+
+  background-color: #955829;
+  border: thin;
+  left:3%;
+  margin: 0;
+  padding-top: .75em;
+  position: fixed;
+  top: 0;
+  width:94%;
+}
+
+.wrapper {
+  border-style: solid;
+  margin-top: 0 auto;
+  padding-left: .25em;
+  padding-right: .25em;
+}
+
+
+/******************************
+ ID Styles
+ *****************************/
+#headerTitle {
+  text-align: center;
+  margin: .5em 0em .5em 0em;
+}
+
+#hideBtn {
+  display: none;
+}
+
+#icon {
+  display: inline-block;
+  float: right;
+  margin-top: 2px;
+  padding-top: 5px;
+}
 
 #mainContentContainer {
   padding-top: 1px;
   padding-bottom: 1px;
 }
 
-#navbar {
-margin: .5em;
-list-style: none;
-text-align: center;
-padding-left: 0;
-}
-
-#navbar li {
+#myProfileList {
   list-style: none;
+  text-align: center;
+  padding: 2px;
 }
 
 #myProfileImgContainer {
-  border: 5px solid gray;
   margin: 5px;
   margin-top: 5px;
   padding-top: 2em;
@@ -91,35 +187,107 @@ padding-left: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 100%;
 }
 
+#myProfileList li {
+    padding:10px 2px 10px 2px;
+}
 
-/* *****************************************
+#reqList {
+  list-style:none;
+  padding-left: 1em;
+}
+
+/******************************************
   Media Queries
 ****************************************** */
 
-@media (min-width: 880px)     {
-  body {
+@media only screen and (min-width: 880px)     {
+
+  /*************************************
+  Element Styles
+  **************************************/
+
+ body {
     width: 80%;
     margin: 1em auto;
     max-width: 1500px;
+    background-color: #955829;
+    background-image: url();
+    background-blend-mode: ;
+    background-size: ;
+  }
 
+  header {
+    background-image: linear-gradient(sienna, lightyellow);
+    border-bottom: solid 2px;
+    margin-top: 0;
+    padding: .5em 0 0 0;
   }
-  .wrapper {
-    /* min-height: calc(100vh - 12.222px); */
+  /*************************************
+  Class Styles
+  **************************************/
+
+  .navbar {
+    overflow: hidden;
+    margin-bottom: 0;
   }
-                                                                            /* This stuff from here down was added to for fun to make a visible impact of screen  */
-  header,
-  .content,
-  .mainHeaderNav li,
-  .mainContentContainer {
-    background-color: white;
-    border-color: white;
+
+  .navbar li {
+    margin-bottom:7px;
+  }
+
+  .navbar li:first-child {
+  display: inline-block;
+  float: left;
+  background-color: white;
+  padding: 9px 12px;
+  text-decoration: none;
+  margin-top: 8px;
+  }
+
+  .navbar li:not(:first-child) {
+  display: inline-block;
+  float: right;
+  background-color: white;
+  padding: 9px 12px;
+  text-decoration: none;
+  margin-top: 8px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 12%;
+    width: 76%;
+  }
+
+
+  /*************************************
+  ID Styles
+  **************************************/
+  #btnClar {
+    float: right;
+    margin-top: 1.25em;
+    margin-right: 2em;
+  }
+
+  #headerTitle {
+    /* display:inline-block; */
+    margin:10px 0 0 0;
+    padding-top:8px;
+  }
+
+  #icon {
+    display:none;
+  }
+
+  #reqH3 {
+    display: inline-block;
   }
 
   #myProfileImgContainer,
-  /* #myProfileImgContent, */
   .swing {
     display: inline-block;
     width: 48%;
@@ -127,56 +295,69 @@ padding-left: 0;
     padding-left: 0;
     padding-right: 0;
   }
-  
+
   #myProfileListContainer {
     border-style:none;
   }
 
-  /* Style the navbar */
-
-  #navbar {
-    /* overflow: hidden; */
-    margin: 0;
-    padding-left: 0;
-    border-width: thin;
-  }
-
-  #navbar li {
-    display: inline-block;
-  }
-
-  #navbar a {
-    display: inline-block;
-    text-align: center;
-    padding: 14px;
-    margin: auto;
-    text-decoration: none;
-  }
-
-
-/* Page content */
-
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
-  width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
- .sticky,
-.content {
-  padding-top: 30px;
-}
+-------------
 
+/* Add a black background color to the top navigation */
+/* .topnav {
+  background-color: #333;
+  overflow: hidden;
+} */
 
-  /* Testing for 2/4/19 */
+/* Style the links inside the navigation bar */
+/* .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} */
 
+/* Change the color of links on hover */
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
 
+/* Add an active class to highlight the current page */
+/* .active {
+  background-color: #4CAF50;
+  color: white;
+} */
 
+/* Hide the link that should open and close the topnav on small screens */
+/* .topnav .icon {
+  display: none;
+} */
 
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+} */
 
-}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* @media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}   */

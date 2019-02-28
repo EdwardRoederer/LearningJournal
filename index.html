@@ -5,56 +5,150 @@
 
 <head>                                                                          <!-- Specifies information about the document, such as a document description, revision dates, and keywords -->
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                     <!-- Specifies the character set used in this HTML document-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">        <!-- Specifies the character set used in this HTML document-->
   <meta name="keywords" content="Edward Roederer, Learning Journal, Code Louisville"/>
   <meta name="description" content= "This is a website I built to practice, showcase, and document my skills. I hope you enjoy it!"/>
   <meta name="author" content="Edward Roederer"/>
   <title>Learning Journal - Edward Roederer</title>                             <!-- Sets the title in the browser -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">              <!-- link CSS file here -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>                                                                          <!-- Defines the body of the document; Includes all Web page content -->
   <div class ="wrapper">
-
-  <header>                                                                      <!-- Represents a container for introductory content or a set of navigational links -->
-    <div class="content">
-      <h1 class="center">Learning Journal</h1>
-      <ul id="navbar">
-        <li><a href="#">Software Development</a></li>
-        <li><a href="#">Lean Six-Sigma Healthcare</a></li>
-        <li><a href="#/">Investing</a></li>
+<!-- Represents a container for introductory content or a set of navigational links -->
+  <header>
+    <div >
+      <h1 id="headerTitle">Learning Journal</h1>
+      <ul class="navbar" id="mynavbar">
+        <li><a href="#">Home</a></li>
+        <li id="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+        <li><a href="#">JQuery</a></li>
+        <li><a href="#">Bootstrap</a></li>
+        <li><a href="#">WordPress</a></li>
       </ul>
     </div>
   </header>
 
-  <hr/>
 
-  <div id="mainContentContainer" class="content">                                                     <!-- Creates an element for the main content of the page and links it to a css class "mainContent"-->
+  <div id="mainContentContainer" class="content">                               <!-- Creates an element for the main content of the page and links it to a css class "mainContent"-->
     <div id="myProfileImgContainer">
-      <img id="myProfileImgContent" src="img/Edward.jpg" alt="The author of this page"/>
+      <img id="myProfileImgContent" src="img/edward.jpg" alt="The author of this page"/>
     </div>
-    <div id = myProfileListContainer class="commonMarginPadding grayBorder swing">
-      Activities
-        <ul id="myProfileList">
-        <li>Record an Entry</li>
-        <li>Take a Quiz</li>
-        <li>Add Vocabulary</li>
-      </ul>
+    <div id="myProfileListContainer" class="commonMarginPadding swing">
+      <button type="button"  class ="mobileBtnCenter activityBtn" onclick="toggleClarifications()">Wireframes for this Page</button>
+      <button type="button"  class ="mobileBtnCenter activityBtn" onclick="toggleClarifications()">Networking Events</button>
+      <button type="button"  class ="mobileBtnCenter activityBtn" onclick="toggleClarifications()">Digital Bling</button>
+
     </div>
-    <div class="commonMarginPadding grayBorder lightBackground">
-      <div class="grayBorder">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt leo ut tristique molestie. Duis at metus vel eros placerat porttitor. Nulla interdum, urna et aliquet commodo, tellus turpis volutpat sapien, sed tempus eros ipsum ut odio. Phasellus tempor, urna sed rhoncus volutpat, magna ligula ornare dui, nec sagittis massa odio euismod purus. Aliquam in turpis vulputate, condimentum dolor nec, ultrices erat. Mauris eleifend tempus dolor, eu tincidunt justo egestas sit amet. Mauris aliquam magna id lobortis efficitur. Nulla facilisi. Nam vel mauris tristique, egestas purus id, dapibus massa. Suspendisse tincidunt, turpis eu porta iaculis, lacus lorem mattis lorem, ut feugiat felis ipsum at sem. Maecenas hendrerit dui magna, imperdiet rhoncus ipsum tincidunt id. Praesent quis aliquet turpis. Vestibulum ac luctus tellus. Vestibulum egestas sollicitudin dolor sit amet tristique. <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt leo ut tristique molestie. Duis at metus vel eros placerat porttitor. Nulla interdum, urna et aliquet commodo, tellus turpis volutpat sapien, sed tempus eros ipsum ut odio. Phasellus tempor, urna sed rhoncus volutpat, magna ligula ornare dui, nec sagittis massa odio euismod purus. Aliquam in turpis vulputate, condimentum dolor nec, ultrices erat. Mauris eleifend tempus dolor, eu tincidunt justo egestas sit amet. Mauris aliquam magna id lobortis efficitur. Nulla facilisi. Nam vel mauris tristique, egestas purus id, dapibus massa. Suspendisse tincidunt, turpis eu porta iaculis, lacus lorem mattis lorem, ut feugiat felis ipsum at sem. Maecenas hendrerit dui magna, imperdiet rhoncus ipsum tincidunt id. Praesent quis aliquet turpis. Vestibulum ac luctus tellus. Vestibulum egestas sollicitudin dolor sit amet tristique. <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt leo ut tristique molestie. Duis at metus vel eros placerat porttitor. Nulla interdum, urna et aliquet commodo, tellus turpis volutpat sapien, sed tempus eros ipsum ut odio. Phasellus tempor, urna sed rhoncus volutpat, magna ligula ornare dui, nec sagittis massa odio euismod purus. Aliquam in turpis vulputate, condimentum dolor nec, ultrices erat. Mauris eleifend tempus dolor, eu tincidunt justo egestas sit amet. Mauris aliquam magna id lobortis efficitur. Nulla facilisi. Nam vel mauris tristique, egestas purus id, dapibus massa. Suspendisse tincidunt, turpis eu porta iaculis, lacus lorem mattis lorem, ut feugiat felis ipsum at sem. Maecenas hendrerit dui magna, imperdiet rhoncus ipsum tincidunt id. Praesent quis aliquet turpis. Vestibulum ac luctus tellus. Vestibulum egestas sollicitudin dolor sit amet tristique.
+    <div class="commonMarginPadding lightBackground">
+      <div class="commonMarginPadding">
+        <h2 class="mobileCenter">Site Requirements</h2>
+        <p class ="mobileJustify">
+          The acceptance of this site requires meeting <strong>ALL</strong> of the critera below. You may use the checkbox next to each component to indicate the requirement has been satisfied.
+          You may view the official documentation <a href="https://docs.google.com/document/d/113JbQO2B5xi4ljqhup9wgHNiNS_5chPNpHvalw9OvwU/edit">here</a>.
+        </p>
+        <p class ="mobileJustify">
+          For your convience, hovering over a requirement will provide guidance on where to focus your attention.
+          Additional clarification for each requirement has been provided and is available for review by clicking the button below.
+        </p>
+        <p>
+          <!-- <h3 id="reqH3" class="mobileCenter">Requirements For This Page</h3> -->
+          <button type="button" id="btnClar" class ="mobileBtnCenter activityBtn" onclick="toggleClarifications()">Show Clarifications</button>
+        </p>
+        <p> <input class="req" type="checkbox" name="Req01" value="Complete">
+              <div class="reqDesc">
+                Your project is responsive to different devices and/or browser sizes and improves the user experience in some way based on what type of device the project is viewed from. The user experience must be improved in some way through your responsive design. See below for clarifications on this requirement.
+                <div class ="reqClar">
+                  <p>
+                    Your site/app should improve user experience with its responsive design, such as making the page easier to view or read, rearranging content, changing the size of content, etc.
+                    Swapping the color of your font or changing a background image/color is not demonstrating an improved experience and will not count.
+                    The two most common (but not the only) methods of accomplishing responsive design are:
+                    CSS media/device queries that will change elements on your page above or below certain screen sizes
+                    Using a framework (such as Bootstrap) to implement responsive design
+                    You do not have to account for all possible devices and browser sizes, just demonstrate some responsive layout principles
+                    Adding 100% width to an image or content area will not be enough to qualify for this requirement for Code Louisville
+                    This will essentially be tested for by using the Chrome Dev Tools to simulate a mobile device view in a browser as well as by looking at your code
+                  </p>
+                </div>
+              </div>
+        </p>
+        <p> <input class="req" type="checkbox" name="Req01" value="Complete">
+              <div class="reqDesc">
+                Your project includes at least 3 custom-written CSS selectors/rules in a .css file which are applied to your HTML elements
+                <div class ="reqClar">
+                  <p>
+                    These selectors/rules MUST be located in a separate .css file you created. It cannot be 'inline' CSS found only within your HTML elements
+                    Using ONLY Bootstrap for your customization does not fulfill this requirement
+                    You are highly encouraged to use a variety of CSS styles to enrich your site, 3 is just a bare minimum. Most sites will have dozens, hundreds, or even thousands of CSS elements
+                  </p>
+                </div>
+              </div>
+        </p>
+        <p> <input class="req" type="checkbox" name="Req01" value="Complete">
+              <div class="reqDesc">
+                Your project includes custom-written JavaScript including at least one JavaScript function (jQuery is fine as well) located in a .js file.
+                Exception: using only alert() or prompt() will not meet this requirement
+                <div class ="reqClar">
+                  <p>
+                    You must include some form of JavaScript written by you, and must be included in a separate .js file in your project (no inline JavaScript)
+                    It must include at minimum 1 working JavaScript function
+                    Using a JavaScript framework such as AJAX, Angular, or jQuery can certainly meet this requirement
+                    Just importing/linking Bootstrap (or other frameworks) does not meet this requirement
+                  </p>
+                </div>
+              </div>
+        </p>
+        <p> <input class="req" type="checkbox" name="Req01" value="Complete">
+              <div class="reqDesc">
+                Your code has some comments noting major portions of your code
+                <div class ="reqClar">
+                  <p>
+                    Every line doesn’t need a comment, but major sections of your CSS, HTML, and/or JavaScript files should have some helpful comments so a reviewer can know what the major parts of your code do and more easily read it
+                  </p>
+                </div>
+              </div>
+        </p>
+        <p> <input class="req" type="checkbox" name="Req01" value="Complete">
+              <div class="reqDesc">
+                Your project code is uploaded to your GitHub account, in its own repository, and the link to it is submitted via the provided form at the end of the session
+                <div class ="reqClar">
+                  <p>
+                  </p>
+                  <p>
+                    Choose a name for your GitHub repo that is relevant to the subject of your project, meaning do not name your repo "CodeLouisvilleProject" or similar. Choose a name based on what your project is about. For example “Brian’s House of Pancakes”, “Personal Portfolio Site”, etc
+                  </p>
+                </div>
+              </div>
+        </p>
+        <p> <input class="req" type="checkbox" name="Req01" value="Complete">
+              <div class="reqDesc">
+                It must include a README file located at the top level directory of your project that includes a description of your project and - if necessary - any special instructions to run/view your project
+                <div class ="reqClar">
+                  <p>
+                    Your readme should help the reviewer understand what your project is going to be about so they know what to expect. It
+                    If you require any special setup, installation, configuration, or other steps to view your project, you must include those steps in your README
+                  </p>
+                </div>
+              </div>
+        </p>
+      <!-- <button type="button" class="mobileBtnCenter"  onclick="toggleDetails()">Hide Details</button> -->
+      <!-- <button type="button" id="btnClar " class ="mobileBtnCenter" onclick="toggleClarifications()">Show Clarifications</button> -->
+      <button type="button" id="hideBtn" class ="mobileBtnCenter activityBtn" onclick="toggleClarifications()">Hide Clarifications</button>
+
+
+
       </div>
-    </div>
   </div>                                                                        <!--ends the mainContent class -->
 
   <footer>
-    <h6>This is the footer for the body</h6>
+    <h6 class="mobileCenter">Created by: <br> Edward Roederer - 2019 <br><br> Special Thanks To: <br> CodeLouisville, Treehouse & The Internet</h6>
   </footer>
-  </div>
+</div>
 
   <script src="js/scripts.js"></script>
 
