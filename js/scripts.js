@@ -6,16 +6,15 @@ var state = 1;
 var navbar = document.getElementById("mynavbar");
 
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
+var stickyPos = navbar.offsetTop;
 
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {makeSticky()};
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
+function makeSticky() {
+  if (window.pageYOffset >= stickyPos) {
     navbar.classList.add("sticky")
     navbar.classList.add("wrapper");
   } else {
@@ -23,17 +22,6 @@ function myFunction() {
     navbar.classList.remove("wrapper");
   }
 }
-
-function toggleDetails() {
-  var x = document.getElementById("reqDetail");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-
-
 
 function toggleClarifications() {
 // console.log (state)
@@ -56,11 +44,12 @@ function toggleClarifications() {
 
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
- // function myFunction() {
- //   var x = document.getElementById("navbar");
- //   if (x.className === "navbar") {
- //     x.className += " responsive";
- //   } else {
- //     x.className = "navbar";
- //   }
- // }
+ function myFunction() {
+   // var x = document.getElementById("mynavbar");
+   console.log(navbar)
+   if (navbar.className === "navbar") {
+       navbar.className += "responsive";
+   } else {
+     navbar.className = "navbar";
+   }
+ }
