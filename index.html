@@ -1,123 +1,119 @@
-                                                                                <!-- HTML Validated @https://validator.w3.org/ on xx-xx-xxx -->
+                                                                                <!-- HTML Validated @https://validator.w3.org/ on 03-01-2019 -->
                                                                                 <!-- Links Checked @https://validator.w3.org/checklink/ on xx-xx-xxx -->
-<!DOCTYPE html>                                                                 <!-- Informs the interpreter what version of HTML the Web page is written in (HTML 5) -->
-<html lang="en">                                                                <!-- Container for all other html elements -->
+<!DOCTYPE html>
 
+<!-- Container for all html elements -->
+<html lang="en">
 <head>                                                                          <!-- Specifies information about the document, such as a document description, revision dates, and keywords -->
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">        <!-- Specifies the character set used in this HTML document-->
-  <meta name="keywords" content="Edward Roederer, Learning Journal, Code Louisville"/>
+  <meta charset="utf-8"/>                                                       <!-- Specifies the character set used in this HTML document-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Edward Roederer, Learning Journal, CodeLouisville"/>
   <meta name="description" content= "This is a website I built to practice, showcase, and document my skills. I hope you enjoy it!"/>
   <meta name="author" content="Edward Roederer"/>
   <title>Learning Journal - Edward Roederer</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
 
-<body>                                                                          <!-- Defines the body of the document; Includes all Web page content -->
+<!--Includes all web page content -->
+<body>
   <div class ="wrapper">
-
-<!-- Header container for title and a set of navigational links -->
+  <!-- header container for title & navigational links -->
   <header>
-    <div >
+    <div>
       <h1 id="headerTitle">Learning Journal</h1>
       <ul id="mynavbar" class="navbar">
-        <li>
+        <li class="inlineBlck">
           <a href="javascript:void(0);" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-
           </a>
         </li>
         <li id="icon">
           <a href="javascript:void(0);" onclick="myFunction()">
             <i class="fas fa-ellipsis-v"></i>
-
           </a>
-        </li>
-        <li><a href="bling.html">Bling</a></li>
-        <li><a href="networking.html">Networking</a></li>
-        <li><a href="wires.html">Wireframes</a></li>
-        <li><a href="evalTool.html" target="_blank">Evaluation Tool</a></li>
+          </li>
+        <li class="navSpace"><a href="bling.html">Bling</a></li>
+        <li class="navSpace"><a href="networking.html">Networking</a></li>
+        <li class="navSpace"><a href="wires.html">Wireframes</a></li>
+        <li class="navSpace"><a href="evalTool.html" target="_blank">Evaluation Tool</a></li>
       </ul>
     </div>
   </header>
 
-<!-- Main Content of Home Page -->
+<!-- Main content of page; includes image and journal-->
   <main class="content">
-
     <!-- Image Section of Home Page -->
-    <div class = "commonMarginPadding">
-      <img id="myProfileImgContent" src="img/edwardCrop.jpg" alt="The author of this page"/>
-    </div>
-
-  <!-- Blog Section of Home Page -->
-    <!-- <div id="myJournalEntries" class="commonMarginPadding swing">
+    <figure id="myFigure" class="displayBlock">
+      <!-- <img id="myProfileImgContent" class="displayBlock" src="img/edwardCrop.jpg" alt="The author of this page" <a href="javascript:void(0);" onclick="myHide()"> -->
+      <img id="myProfileImgContent" src="img/edwardCrop.jpg" alt="The author of this page" onclick="myHide()">
+      <figcaption>Click Image to Hide</figcaption>
+    </figure>
+ <!-- Blog Section of Home Page -->
+     <!-- <div id="myJournalEntries" class="commonMarginPadding swing">
       <button type="button"  class ="mobileBtnCenter activityBtn" onclick="toggleClarifications()">New Entry</button>
-    </div> -->
-    <h2 class="mobileCenter">Journal Entries</h2>
-    <div id="blogReader">
-      <!-- HTML Blog #1 -->
-      <h3 class="content inlineBlck" >2/28/19</h3>
-      <h3 class="content inlineBlck">First Entry</h3>
-      <p class ="mobileJustify content">
-        This is the first entry. I'll likely revise this to include some significant milestones in recent months. For now,
-        this entry is being coded directly into the HTML. I expect to transistion to a more proper method of entering, storing and displaying
-        blog entries.
-      </p>
-      <p class="mobileJustify content">
-        To date, I've struggled with having a clear idea of what to do with this site. I've been through dozens of iterations. I often wonder
-        how much easier this would have been if I had a well developed "vision" and wireframe in the beginning.
-      </p>
+     </div> -->
+    <h2 class="mobileCenter">Entries</h2>
+    <div id="blogReader" class= "wrapper">
       <!-- HTML Blog #2 -->
-      <h3 class="content inlineBlck">2/28/19</h3>
+      <h3 class="content inlineBlck" >3/1/19</h3>
+      <h3 class="content inlineBlck">Working with Images</h3>
+
+      <p class ="mobileJustify content">
+        Today, I spent time looking into resizing images. Maybe I've done this before and just forgotten because I experienced some wicked
+        Deja-vu. <em>(Unfortunalty, I just realized I need to bookmark a resource for displaying
+          <a href="https://www.freeformatter.com/html-entities.html" target="_blank">special characters</a>
+          )</em> Who knows, maybe I already have.
+      </p>
+      <p class="mobileJustify content">
+        Out of necessity, I explored the following topics today:
+        <ul>
+          <li> The <a href="https://www.w3schools.com/tags/tag_figure.asp" target="_blank">&ltfigure&gt</a> tag.</li>
+          <li> The <a href="https://www.w3schools.com/tags/tag_figcaption.asp" target="_blank">&ltfigcaption&gt</a> tag.</li>
+        </ul>
+      </p>
+      <!-- HTML Blog #1 -->
+      <h3 class="content inlineBlck" >02/28/19</h3>
+      <h3 class="content inlineBlck">Test Entry</h3>
+      <p class ="mobileJustify content">
+        This is the first entry. I'll make some historical entries to include significant milestones in recent months. For now,
+        this entry is being coded directly into the HTML. I expect to transistion to a more proper method of entering, storing and displaying
+        these entries.
+      </p>
+      <!-- HTML Blog #-1 -->
+      <h3 class="content inlineBlck">02/12/19</h3>
+      <h3 class="content inlineBlck">Treehouse - Code Lou - Front End Jan 2019</h3>
+      <p class ="mobileJustify content">
+        I completed the track.
+      <!-- HTML Blog #-2 -->
+      <h3 class="content inlineBlck">02/02/19</h3>
+      <h3 class="content inlineBlck">CIW: Site Development Associate</h3>
+      <p class ="mobileJustify content">
+        I passed the exam to earn this certification.
+      <!-- HTML Blog #-3 -->
+      <h3 class="content inlineBlck" >01/01/19</h3>
       <h3 class="content inlineBlck">First Entry</h3>
       <p class ="mobileJustify content">
-        This is the first entry. I'll likely revise this to include some significant milestones in recent months. For now,
-        this entry is being coded directly into the HTML. I expect to transistion to a more proper method of entering, storing and displaying
-        blog entries.
+
       </p>
       <p class="mobileJustify content">
         To date, I've struggled with having a clear idea of what to do with this site. I've been through dozens of iterations. I often wonder
         how much easier this would have been if I had a well developed "vision" and wireframe in the beginning.
       </p>
-      <!-- HTML Blog #3 -->
-      <h3 class="content inlineBlck">2/28/19</h3>
-      <h3 class="content inlineBlck">First Entry</h3>
-      <p class ="mobileJustify content">
-        This is the first entry. I'll likely revise this to include some significant milestones in recent months. For now,
-        this entry is being coded directly into the HTML. I expect to transistion to a more proper method of entering, storing and displaying
-        blog entries.
-      </p>
-      <p class="mobileJustify content">
-        To date, I've struggled with having a clear idea of what to do with this site. I've been through dozens of iterations. I often wonder
-        how much easier this would have been if I had a well developed "vision" and wireframe in the beginning.
-      </p>
-      <!-- HTML Blog #4 -->
-      <h3 class="content inlineBlck" >2/28/19</h3>
-      <h3 class="content inlineBlck">First Entry</h3>
-      <p class ="mobileJustify content">
-        This is the first entry. I'll likely revise this to include some significant milestones in recent months. For now,
-        this entry is being coded directly into the HTML. I expect to transistion to a more proper method of entering, storing and displaying
-        blog entries.
-      </p>
-      <p class="mobileJustify content">
-        To date, I've struggled with having a clear idea of what to do with this site. I've been through dozens of iterations. I often wonder
-        how much easier this would have been if I had a well developed "vision" and wireframe in the beginning.
-      </p>
-  </div>
+  </div> <!-- Close the blogReader div -->
 
   </main>
 
-<!-- Footer Content of Home Page -->
+<!-- Footer Container of Home Page -->
 
   <footer>
-    <h6 class="mobileCenter">Created by: <br> Edward Roederer - 2019 <br><br> Special Thanks To: <br> CodeLouisville, Treehouse & The Internet</h6>
+    <h6 class="mobileCenter">
+      Created by: <br> Edward Roederer - 2019 <br><br> Special Thanks To: <br> CodeLouisville, Treehouse & The Internet
+    </h6>
   </footer>
-
-
-
   <script src="js/scripts.js"></script>
-
+</div> <!-- Close the wrapper div -->
 </body>
 </html>

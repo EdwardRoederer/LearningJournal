@@ -42,6 +42,16 @@ function toggleClarifications() {
   }
 }
 
+function myHide() {
+  var img = document.getElementById("myFigure")
+  console.log(img)
+  if (img.className === "displayBlock") {
+      img.classList.remove("displayBlock");
+      img.classList.add("displayHide");
+  } else {
+    img.classList.remove("displayHide");
+  }
+}
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
  function myFunction() {
