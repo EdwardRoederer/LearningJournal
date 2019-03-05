@@ -13,12 +13,12 @@
   <title>Learning Journal - Edward Roederer</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <!--Includes all web page content -->
-<body>
+<body id="bodyIndex">
   <div class ="wrapper">
   <!-- header container for title & navigational links -->
   <header>
@@ -42,7 +42,6 @@
       </ul>
     </div>
   </header>
-
 <!-- Main content of page; includes image and journal-->
   <main class="content">
     <!-- Image Section of Home Page -->
@@ -51,16 +50,12 @@
       <img id="myProfileImgContent" src="img/edwardCrop.jpg" alt="The author of this page" onclick="myHide()">
       <figcaption>Click Image to Hide</figcaption>
     </figure>
- <!-- Blog Section of Home Page -->
-     <!-- <div id="myJournalEntries" class="commonMarginPadding swing">
-      <button type="button"  class ="mobileBtnCenter activityBtn" onclick="toggleClarifications()">New Entry</button>
-     </div> -->
+
     <h2 class="mobileCenter">Entries</h2>
     <div id="blogReader" class= "wrapper">
       <!-- HTML Blog #2 -->
       <h3 class="content inlineBlck" >3/1/19</h3>
       <h3 class="content inlineBlck">Working with Images</h3>
-
       <p class ="mobileJustify content">
         Today, I spent time looking into resizing images. Maybe I've done this before and just forgotten because I experienced some wicked
         Deja-vu. <em>(Unfortunalty, I just realized I need to bookmark a resource for displaying
@@ -74,6 +69,7 @@
           <li> The <a href="https://www.w3schools.com/tags/tag_figcaption.asp" target="_blank">&ltfigcaption&gt</a> tag.</li>
         </ul>
       </p>
+      <hr>
       <!-- HTML Blog #1 -->
       <h3 class="content inlineBlck" >02/28/19</h3>
       <h3 class="content inlineBlck">Test Entry</h3>
@@ -82,28 +78,28 @@
         this entry is being coded directly into the HTML. I expect to transistion to a more proper method of entering, storing and displaying
         these entries.
       </p>
+      <hr>
       <!-- HTML Blog #-1 -->
       <h3 class="content inlineBlck">02/12/19</h3>
-      <h3 class="content inlineBlck">Treehouse - Code Lou - Front End Jan 2019</h3>
+      <h3 class="content inlineBlck">Treehouse</h3>
       <p class ="mobileJustify content">
-        I completed the track.
+        I completed the "Code Lou - Front End Jan 2019" track.
+      </p>
+      <hr>
       <!-- HTML Blog #-2 -->
       <h3 class="content inlineBlck">02/02/19</h3>
       <h3 class="content inlineBlck">CIW: Site Development Associate</h3>
       <p class ="mobileJustify content">
         I passed the exam to earn this certification.
+      </p>
+      <hr>
       <!-- HTML Blog #-3 -->
       <h3 class="content inlineBlck" >01/01/19</h3>
-      <h3 class="content inlineBlck">First Entry</h3>
+      <h3 class="content inlineBlck">Started CodeLouisville</h3>
       <p class ="mobileJustify content">
-
       </p>
-      <p class="mobileJustify content">
-        To date, I've struggled with having a clear idea of what to do with this site. I've been through dozens of iterations. I often wonder
-        how much easier this would have been if I had a well developed "vision" and wireframe in the beginning.
-      </p>
-  </div> <!-- Close the blogReader div -->
-
+      <hr>
+    </div> <!-- Close the blogReader div -->
   </main>
 
 <!-- Footer Container of Home Page -->
@@ -113,7 +109,9 @@
       Created by: <br> Edward Roederer - 2019 <br><br> Special Thanks To: <br> CodeLouisville, Treehouse & The Internet
     </h6>
   </footer>
+
   <script src="js/scripts.js"></script>
-</div> <!-- Close the wrapper div -->
+
+  </div> <!-- Close the wrapper div -->
 </body>
 </html>

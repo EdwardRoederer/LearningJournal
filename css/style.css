@@ -9,10 +9,10 @@ Element Styles
 **************************************/
 
 body {
-  background-blend-mode: overlay;
+  /* background-blend-mode: overlay;
   background-color: #955829;
   background-image: url("../img/print.png");
-  background-size: cover;
+  background-size: cover; */
   font-family:arial, verdana, helvetica;
   padding: 1em;
   min-width: 320px;
@@ -22,7 +22,7 @@ body {
 header {
   background-image: linear-gradient(sienna, lightyellow);
   border-bottom: solid 2px;
-  margin-top: 0;
+  margin-top: 4px;
   padding: .5em 0 2.8em 0;
 }
 
@@ -70,8 +70,10 @@ Class Styles
 
 .mobileBtnCenter {
   display: block;
-  margin-left:auto;
-  margin-right:auto;
+  /* commented out for testing 3/4/19 */
+  /* margin-left:auto;
+  margin-right:auto; */
+  width: 100%;
 }
 
 .mobileCenter {
@@ -93,9 +95,7 @@ Class Styles
 
 .navbar li {
   border-radius: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-bottom: 14px;
+  margin: 0px 2px 14px 2px;
 }
 
 .navbar li:first-child {
@@ -120,6 +120,16 @@ Class Styles
   margin-bottom: 12px;
 }
 
+.navbarresponsive {
+ display: block;
+ float: none;
+ list-style-type: none;
+ margin-top: 10px;
+ padding-left: 8px;
+ text-align: left;
+ width: 96%;
+}
+
 .req {
   float: left;
   margin: 2px 0px 0px 20px;
@@ -136,13 +146,6 @@ Class Styles
   padding: 0px 0px 0px 10px;
 }
 
- .navbarresponsive {
-  margin-top: 10px;
-  float: none;
-  display: block;
-  text-align: left;
-  list-style-type: none;
-}
 
 .sticky {
 
@@ -168,6 +171,17 @@ Class Styles
 /******************************
  ID Styles
  *****************************/
+#btnClar {
+  margin: 0 auto;
+}
+
+#bodyIndex {
+  background-blend-mode: overlay;
+  background-color: #955829;
+  background-image: url("../img/print.png");
+  background-size: cover;
+}
+
 #headerTitle {
   text-align: center;
   margin: .5em 0em .5em 0em;
@@ -215,10 +229,6 @@ Class Styles
     width: 80%;
     margin: 1em auto;
     max-width: 1500px;
-    background-color: #955829;
-    background-image: url();
-    /* background-blend-mode: ;
-    background-size: ; */
   }
 
   header {
@@ -270,11 +280,6 @@ Class Styles
   /*************************************
   ID Styles  Media Queries
   **************************************/
-  #btnClar {
-    float: right;
-    margin-top: 1.25em;
-    margin-right: 2em;
-  }
 
   #headerTitle {
     /* display:inline-block; */
