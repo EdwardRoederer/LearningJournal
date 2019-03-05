@@ -9,10 +9,6 @@ Element Styles
 **************************************/
 
 body {
-  /* background-blend-mode: overlay;
-  background-color: #955829;
-  background-image: url("../img/print.png");
-  background-size: cover; */
   font-family:arial, verdana, helvetica;
   padding: 1em;
   min-width: 320px;
@@ -33,17 +29,6 @@ figure {
 /*************************************
 Class Styles
 **************************************/
-
-.activityBtn {
-  margin: 20px;
-  padding: 10px;
-  width:80%;
-}
-
-.center {
-  margin: 0;
-  text-align: center;
-}
 
 .commonMarginPadding {
   margin: 2px;
@@ -66,14 +51,6 @@ Class Styles
 
 .inlineBlck {
   display: inline-block;
-}
-
-.mobileBtnCenter {
-  display: block;
-  /* commented out for testing 3/4/19 */
-  /* margin-left:auto;
-  margin-right:auto; */
-  width: 100%;
 }
 
 .mobileCenter {
@@ -101,7 +78,6 @@ Class Styles
 .navbar li:first-child {
     background-color: white;
     float: left;
-    /* margin-left:20px; */
     padding: 9px 12px;
     text-align: center;
     text-decoration: none;
@@ -276,6 +252,14 @@ Class Styles
     width: 76%;
   }
 
+  .swing {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 
   /*************************************
   ID Styles  Media Queries
@@ -287,25 +271,10 @@ Class Styles
     padding-top:8px;
   }
 
-
-    display:none;
-  }
-
   #reqH3 {
     display: inline-block;
   }
 
-  #myProfileImgContainer,
-  .swing {
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
-    padding-left: 0;
-    padding-right: 0;
-  }
 
-  #myJournalEntries {
-    border-style:none;
-  }
 
 }

@@ -4,11 +4,8 @@ var state = 1;
 
 // Get the navbar
 var navbar = document.getElementById("mynavbar");
-
 // Get the offset position of the navbar
 var stickyPos = navbar.offsetTop;
-
-
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {makeSticky()};
 
@@ -44,7 +41,7 @@ function toggleClarifications() {
 
 function myHide() {
   var img = document.getElementById("myFigure")
-  console.log(img)
+  // console.log(img)
   if (img.className === "displayBlock") {
       img.classList.remove("displayBlock");
       img.classList.add("displayHide");
@@ -56,7 +53,7 @@ function myHide() {
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
  function myFunction() {
    // var x = document.getElementById("mynavbar");
-   console.log(navbar)
+   // console.log(navbar)
    if (navbar.className === "navbar") {
        navbar.className += "responsive";
    } else {
