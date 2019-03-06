@@ -136,6 +136,10 @@ Class Styles
   opacity: .98;
  }
 
+.wideFormat {
+  display:none;
+}
+
 .wrapper {
   border-style: solid;
   padding-left: .25em;
@@ -180,7 +184,6 @@ Class Styles
   }
 
 #myProfileImgContent {
-  /* display: block; */
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -254,11 +257,20 @@ Class Styles
 
   .swing {
     display: inline-block;
-    width: 48%;
+    /* width: 48%; */
     vertical-align: top;
     padding-left: 0;
     padding-right: 0;
   }
+
+  .wideFormat {
+    display:inline-block;
+    float: right;
+    width: 48%;
+    height: 100%;
+  }
+
+
 
 
   /*************************************
@@ -270,6 +282,14 @@ Class Styles
     margin:10px 0 0 0;
     padding-top:8px;
   }
+
+  #myProfileImgContent {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48%;
+  }
+
 
   #reqH3 {
     display: inline-block;
