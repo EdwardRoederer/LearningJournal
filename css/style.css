@@ -212,9 +212,9 @@ Class Styles
   }
 
   header {
-    background-image: linear-gradient(sienna, lightyellow);
+    background-image: linear-gradient(#ffcc99, #ffcc99);
     border-bottom: solid 2px;
-    margin-top: 0;
+    margin-top: 6px;
     padding: .5em 0 0 0;
 
   }
