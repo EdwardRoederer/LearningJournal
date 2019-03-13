@@ -76,22 +76,24 @@ Class Styles
 }
 
 .navbar li:first-child {
-    background-color: white;
-    float: left;
-    padding: 9px 12px;
-    text-align: center;
-    text-decoration: none;
+  float: left;
+  text-align: center;
+  text-decoration: none;
 }
 
 .navbar li:not(:first-child) {
   display: none;
+
 }
+
 
 .navbar li a:first-child {
   color: black;
 }
 
 .navSpace {
+  background-color: white;
+  border-radius: 15px 50px 30px 5px;
   padding: 10px;
   margin-bottom: 12px;
 }
@@ -172,6 +174,14 @@ Class Styles
   display: none;
 }
 
+#hbars {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 25px;
+  padding: 9px 12px;
+}
+
 #icon {
   display: inline-block;
   float: right;
@@ -232,21 +242,26 @@ Class Styles
   }
 
   .navbar li:first-child {
-  display: inline-block;
-  float: left;
-  background-color: white;
-  padding: 9px 12px;
-  text-decoration: none;
-  margin-top: 8px;
+    display: inline-block;
+    float: left;
+    background-color: white;
+    padding: 9px 12px;
+    text-decoration: none;
+    margin-top: 8px;
   }
 
   .navbar li:not(:first-child) {
-  display: inline-block;
-  float: right;
-  background-color: white;
-  padding: 9px 12px;
-  text-decoration: none;
-  margin-top: 8px;
+    display: inline-block;
+    float: right;
+    padding: 9px 12px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
+
+  .navSpace {
+    background-image: linear-gradient(#ffcc99, #ffcc99);
+    margin-bottom: 12px;
+    padding: 10px;
   }
 
   .sticky {
@@ -258,7 +273,6 @@ Class Styles
 
   .swing {
     display: inline-block;
-    /* width: 48%; */
     vertical-align: top;
     padding-left: 0;
     padding-right: 0;
@@ -284,9 +298,15 @@ Class Styles
   }
 
   #headerTitle {
-    /* display:inline-block; */
     margin:10px 0 0 0;
     padding-top:8px;
+  }
+
+
+
+  #icon {
+    margin-top: 8px;
+    padding-top: 9px;
   }
 
   #myProfileImgContent {
@@ -296,11 +316,8 @@ Class Styles
     width: 48%;
   }
 
-
   #reqH3 {
     display: inline-block;
   }
-
-
 
 }
