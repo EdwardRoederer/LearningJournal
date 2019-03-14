@@ -174,6 +174,10 @@ Class Styles
   display: none;
 }
 
+#home {
+  display:none;
+}
+
 #hbars {
   background-color: white;
   border-radius: 5px;
@@ -253,13 +257,14 @@ Class Styles
   .navbar li:not(:first-child) {
     display: inline-block;
     float: right;
-    padding: 9px 12px;
+    padding: 9px 15px;
     text-decoration: none;
     margin-top: 8px;
   }
 
   .navSpace {
     background-image: linear-gradient(#ffcc99, #ffcc99);
+    background-color: #ffcc99;
     margin-bottom: 12px;
     padding: 10px;
   }
@@ -302,11 +307,23 @@ Class Styles
     padding-top:8px;
   }
 
+  #hbars {
+    display: none;
+  }
+
+  #home {
+    display: inline-block;
+    float: left;
+    padding: 9px 12px;
+    text-decoration: none;
+    margin-top: 8px;
+  }
 
 
   #icon {
-    margin-top: 8px;
-    padding-top: 9px;
+    display: none;
+    /* margin-top: 8px;
+    padding-top: 9px; */
   }
 
   #myProfileImgContent {
