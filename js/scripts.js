@@ -41,12 +41,13 @@ function toggleClarifications() {
 
 function myHide() {
   var img = document.getElementById("myFigure")
-  // console.log(img)
+  console.log(img.classList)
   if (img.className === "displayBlock") {
       img.classList.remove("displayBlock");
       img.classList.add("displayHide");
   } else {
     img.classList.remove("displayHide");
+    img.classList.add("displayBlock")
   }
 }
 

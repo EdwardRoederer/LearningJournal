@@ -131,14 +131,22 @@ Class Styles
 }
 
 .settingsShow {
-  display:inline-block;
-  float:right;
+  display:block;
+  /* float:right; */
   margin-bottom: 1em;
+}
+
+.settingsBar {
+  /* display: inline; */
+
+
 }
 
 .settingsBar li {
   list-style: none;
   margin-right: 1em;
+  margin-left:50%;
+  text-align:end;
 }
 
 .settingsBar li:first-child{
@@ -341,9 +349,7 @@ Class Styles
 
 
   #icon {
-    display: none;
-    /* margin-top: 8px;
-    padding-top: 9px; */
+    padding-top: 15px;
   }
 
   #myProfileImgContent {
