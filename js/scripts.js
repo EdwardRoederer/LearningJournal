@@ -60,3 +60,22 @@ function myHide() {
      navbar.className = "navbar";
    }
  }
+
+
+ /* added these to test another menu on right side for settings */
+
+
+ /* Toggle between ad
+ ding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function mySettingsFunc() {
+    var mySettingsVar = document.getElementById("mySettings");
+    console.log(mySettingsVar)
+    if (mySettingsVar.className === "settingsBar settingsHide") {
+        mySettingsVar.classList.remove("settingsHide");
+        mySettingsVar.classList.add("settingsShow");
+    } else {
+    mySettingsVar.classList.remove("settingsShow");
+    mySettingsVar.classList.add("settingsHide");
+
+    }
+  }
