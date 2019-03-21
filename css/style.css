@@ -9,11 +9,9 @@ Element Styles
 **************************************/
 
 body {
-  /* font-family:arial, verdana, helvetica; */
   font-family:"Comic Sans MS", verdana, sans-serif;
   padding: 1em;
   min-width: 320px;
-  /* max-height: 800px; */
 }
 
 header {
@@ -124,7 +122,6 @@ Class Styles
   overflow: hidden;
   padding: 0px 0px 0px 10px;
 }
-/* added these two to test another menu on right side for settings */
 
 .settingsHide {
   display: none;
@@ -132,14 +129,7 @@ Class Styles
 
 .settingsShow {
   display:block;
-  /* float:right; */
   margin-bottom: 1em;
-}
-
-.settingsBar {
-  /* display: inline; */
-
-
 }
 
 .settingsBar li {
@@ -187,10 +177,13 @@ Class Styles
 
 #bodyIndex {
   background-blend-mode: overlay;
-  /* background-image: linear-gradient(sienna, lightyellow); */
   background-color: #955820;
   background-image: url("../img/print.png");
   background-size: cover;
+}
+
+#flexer {
+  display: flex;
 }
 
 #headerTitle {
@@ -315,7 +308,6 @@ Class Styles
     display:inline-block;
     float: right;
     width: 48%;
-    height: 100%;
   }
 
 
@@ -325,13 +317,12 @@ Class Styles
   ID Styles  Media Queries
   **************************************/
   #bodyIndex {
-    /* background-blend-mode: overlay; */
     background-image: linear-gradient(sienna, lightyellow);
-    /* background-color: white; */
   }
 
   #entryArea {
-    height: 800px;
+    min-height: 400px;
+    max-height: 800px;
 
 /*I borrowed this css for a lined background from
   https://codepen.io/montanaflynn/pen/cbuvy     */
@@ -355,12 +346,6 @@ Class Styles
     -ms-linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
   -webkit-background-size: 100% 2em;
   -moz-background-size: 100% 2em;
-
-  /* In a perfect world... */
-  /* background-image:
-    linear-gradient(0deg, transparent 5em, rgba(255,0,0,.2) 0, transparent 5.1em),
-    linear-gradient(rgba(0,0,255,.3) 1px, transparent 0);
-  background-size: 100% 2em; */
   }
 
   #headerTitle {
@@ -385,12 +370,19 @@ Class Styles
     padding-top: 15px;
   }
 
+
   #myProfileImgContent {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    width: 48%;
+    /* width: 48%; */
+
   }
+
+#myFigure {
+  width: 48%;
+}
+
 
   #reqH3 {
     display: inline-block;

@@ -2,8 +2,6 @@
                                                                                 <!-- Links Checked @https://validator.w3.org/checklink/ on xx-xx-xxx -->
 <!DOCTYPE html>
 
-<!-- Container for all html elements -->
-
 <html lang="en">
 <head>                                                                          <!-- Specifies information about the document, such as a document description, revision dates, and keywords -->
   <meta charset="utf-8"/>                                                       <!-- Specifies the character set used in this HTML document-->
@@ -14,22 +12,19 @@
   <title>Learning Journal - Edward Roederer</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-
-<!--Includes all web page content -->
 
 <body id="bodyIndex">
   <div class ="wrapper">
 
 
-  <!--
+<!--
       header container for title & navigational links
                                                       -->
 
 
-  <header>
+  <header id="headerElem">
     <div>
       <h1 id="headerTitle">Learning Journal</h1>
       <ul id="mynavbar" class="navbar">
@@ -60,23 +55,29 @@
 
   </header>
 
-<!-- Main content of page; includes image and journal-->
+<!-- Main content of page; Sections include image, journal viewer and entry form for wide screen format only-->
 
   <main class="content">
+    <div id="flexer">
+      <figure id="myFigure">
+        <img id="myProfileImgContent" src="img/EdwardCrop.jpg" alt="The author of this page" onclick="myHide()">
+      </figure>
 
-
+      <div id="entryArea"class="wideFormat swing">
+      flexbox 2 div 1 for image (object -fit for css) 1 for text area
+      </div>
+    </div>
     <!--
       Image Section of Home Page
                                 -->
 
-    <figure id="myFigure" class="displayBlock">
+    <!-- <figure id="myFigure" class="displayBlock">
       <img id="myProfileImgContent" src="img/EdwardCrop.jpg" alt="The author of this page" onclick="myHide()">
       <textarea id="entryArea"class="wideFormat swing wrapper">
         flexbox 2 div 1 for image (object -fit for css) 1 for text area
       </textarea>
-      <!-- Commented out for testing on 3/18/19 -->
-      <!-- <figcaption> Click Image to Hide</figcaption> -->
-    </figure>
+      <figcaption> Click Image to Hide</figcaption>
+    </figure> -->
 
 
 
