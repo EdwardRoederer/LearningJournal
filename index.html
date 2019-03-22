@@ -28,15 +28,12 @@
     <div>
       <h1 id="headerTitle">Learning Journal</h1>
       <ul id="mynavbar" class="navbar">
-
         <li id="hbars" class="inlineBlck">
           <a href="javascript:void(0);" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
         </li>
-
         <li id="home"><a href="index.html">Home</a></li>
-
         <li id="icon">
           <a href="javascript:void(0);" onclick="mySettingsFunc()">
             <i class="fas fa-ellipsis-v"></i>
@@ -46,16 +43,18 @@
         <li class="navSpace"><a href="wires.html">Wireframes</a></li>
         <li class="navSpace"><a href="evalTool.html" target="_blank">Evaluation Tool</a></li>
       </ul>
-
       <ul id="mySettings" class="settingsBar settingsHide">
         <li class="navSpace" onclick="myHide()"><a href="#">Toggle Picture</a></li>
         <li class="navSpace"><a href="#">Create Entry</a></li>
       </ul>
     </div>
-
   </header>
 
 <!-- Main content of page; Sections include image, journal viewer and entry form for wide screen format only-->
+
+  <!--
+    Image Section
+                            -->
 
   <main class="content">
     <div id="flexer">
@@ -63,31 +62,29 @@
         <img id="myProfileImgContent" src="img/EdwardCrop.jpg" alt="The author of this page" onclick="myHide()">
       </figure>
 
-      <div id="entryArea"class="wideFormat swing">
-      flexbox 2 div 1 for image (object -fit for css) 1 for text area
-      </div>
+  <!--
+    Journal Entry Viewer Section
+                            -->
+      <div id="entryArea" class="wideFormat swing">
+        <textarea class="swing">You can use this section as a notepad
+        </textarea>
     </div>
-    <!--
-      Image Section of Home Page
-                                -->
-
-    <!-- <figure id="myFigure" class="displayBlock">
-      <img id="myProfileImgContent" src="img/EdwardCrop.jpg" alt="The author of this page" onclick="myHide()">
-      <textarea id="entryArea"class="wideFormat swing wrapper">
-        flexbox 2 div 1 for image (object -fit for css) 1 for text area
-      </textarea>
-      <figcaption> Click Image to Hide</figcaption>
-    </figure> -->
-
-
-
-    <!--
-      This is the Journal Reader Section
-                                        -->
-
-
+    </div>
     <h2 class="mobileCenter">Entries</h2>
 
+    <div id="blogReader" class="displayBlock">
+      <!-- HTML Blog #5 -->
+      <hr>
+      <h3 class="content inlineBlck" >3/21/19</h3>
+      <h3 class="content inlineBlck">The Fatburg </h3>
+      <p class ="mobileJustify content">
+        I read about something called a "fatburg". It's essentially a large
+        pile of non-biodegradeable "stuff" that collects in the sewage system and clogs
+        the pipes. Eventually, somebody has to go in and clean it all up.
+        It makes me think of the bandaid-workarounds I've been using to create this project.
+        The further I progress with the project, the more I see the need to go
+        ahead and clean the pipes!
+      </p>
 
     <div id="blogReader" class="displayBlock">
       <!-- HTML Blog #4 -->
@@ -106,8 +103,8 @@
       <h3 class="content inlineBlck">Site Requirements</h3>
       <p class ="mobileJustify content">
         There's a fine line between scope creep and innovation when you're working solo on a project.
-        I'm going to expand the scope of this journal to inlcude multiple topics. By doing so,
-        i'm redefining the requirements of this site. I think I'll need a way to sort and filter posts
+        I'm going to expand the scope of this journal to include multiple topics. By doing so,
+        I'm redefining the requirements of this site. I think I'll need a way to sort and filter posts
         for future reference. I see this developiing into more of a front-end for a database. That should give
         this project some legs as I continue in CodeLouisville.
       </p>

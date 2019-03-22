@@ -25,6 +25,17 @@ figure {
   margin: auto;
 }
 
+textarea {
+  background: transparent;
+  overflow: auto;
+  min-height: 400px;
+  max-height: 800px;
+  float: right;
+  width: 80%;
+  height: 100%;
+  border: none;
+}
+
 /*************************************
 Class Styles
 **************************************/

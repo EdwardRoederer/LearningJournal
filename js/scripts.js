@@ -1,7 +1,6 @@
 
 // create a variable to monitor the state of the toggle button
 var state = 1;
-
 // Get the navbar
 var navbar = document.getElementById("mynavbar");
 // Get the offset position of the navbar
