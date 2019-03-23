@@ -1,4 +1,4 @@
-                                                                                <!-- HTML Validated @https://validator.w3.org/ on 03-01-2019 -->
+                                                                                <!-- HTML Validated @https://validator.w3.org/ on 03-23-2019 -->
                                                                                 <!-- Links Checked @https://validator.w3.org/checklink/ on xx-xx-xxx -->
 <!DOCTYPE html>
 
@@ -22,7 +22,6 @@
 <!--
       header container for title & navigational links
                                                       -->
-
 
   <header id="headerElem">
     <div>
@@ -52,27 +51,33 @@
 
 <!-- Main content of page; Sections include image, journal viewer and entry form for wide screen format only-->
 
-  <!--
-    Image Section
-                            -->
-
   <main class="content">
+
+    <!--
+      Image and Notepad Section
+                              -->
+
     <div id="flexer">
+
+      <!-- Image -->
       <figure id="myFigure">
         <img id="myProfileImgContent" src="img/EdwardCrop.jpg" alt="The author of this page" onclick="myHide()">
       </figure>
 
-  <!--
-    Journal Entry Viewer Section
-                            -->
+      <!-- Notepad -->
       <div id="entryArea" class="wideFormat swing">
-        <textarea class="swing">You can use this section as a notepad
-        </textarea>
+        <h4 id="notePadTitle">You can use this as a notepad.</h4>
+        <textarea class="swing"></textarea>
+      </div>
     </div>
-    </div>
-    <h2 class="mobileCenter">Entries</h2>
 
+    <!--
+      Journal Entry Viewer Section
+                              -->
+
+    <h2 class="mobileCenter">Entries</h2>
     <div id="blogReader" class="displayBlock">
+
       <!-- HTML Blog #5 -->
       <hr>
       <h3 class="content inlineBlck" >3/21/19</h3>
@@ -85,8 +90,6 @@
         The further I progress with the project, the more I see the need to go
         ahead and clean the pipes!
       </p>
-
-    <div id="blogReader" class="displayBlock">
       <!-- HTML Blog #4 -->
       <hr>
       <h3 class="content inlineBlck" >3/13/19</h3>
@@ -121,11 +124,12 @@
       </p>
       <p class="mobileJustify content">
         Out of necessity, I explored the following topics today:
-        <ul>
-          <li> The <a href="https://www.w3schools.com/tags/tag_figure.asp" target="_blank">&ltfigure&gt</a> tag.</li>
-          <li> The <a href="https://www.w3schools.com/tags/tag_figcaption.asp" target="_blank">&ltfigcaption&gt</a> tag.</li>
-        </ul>
       </p>
+        <ul>
+          <li> The <a href="https://www.w3schools.com/tags/tag_figure.asp" target="_blank">&lt;figure&gt;</a> tag.</li>
+          <li> The <a href="https://www.w3schools.com/tags/tag_figcaption.asp" target="_blank">&lt;figcaption&gt;</a> tag.</li>
+        </ul>
+
       <hr>
       <!-- HTML Blog #1 -->
       <h3 class="content inlineBlck" >02/28/19</h3>
