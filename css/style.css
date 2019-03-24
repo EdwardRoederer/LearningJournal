@@ -249,6 +249,27 @@ Class Styles
 /******************************************
   Media Queries
 ****************************************** */
+@media only screen and (min-width: 1300px)     {
+  textarea {
+    width: 83%;
+  }
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width:1299)   {
+  textarea {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1099px)   {
+    textarea {
+      width: 73%;
+    }
+
+}
+
+
 
 @media only screen and (min-width: 880px)     {
 
