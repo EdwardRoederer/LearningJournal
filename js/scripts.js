@@ -39,13 +39,25 @@ function toggleClarifications() {
 }
 
 function myHide() {
-  var img = document.getElementById("myFigure")
+  var img = document.getElementById("myFigure");
+  var area = document.getElementById("entryArea");
+
   console.log(img.classList)
   if (img.className === "") {
       img.classList.add("displayHide");
+      area.style.width = "100%";
+
   } else {
       img.classList.remove("displayHide");
+      area.style.width = "48%";
+
   }
+
+
+
+
+
+
 }
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */

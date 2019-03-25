@@ -34,6 +34,7 @@ textarea {
   width: 80%;
   height: 100%;
   border: none;
+  line-height: 2;
 }
 
 /*************************************
