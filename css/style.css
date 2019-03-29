@@ -32,12 +32,13 @@ textarea {
   max-height: 800px;
   position: relative;
   left: 6em;
-  width: 80%;
+  width: 75%;
   height: 90%;
   border: none;
   line-height: 2;
   font-style: italic;
   font-weight: lighter;
+  z-index: auto;
 }
 
 /*************************************
@@ -151,11 +152,13 @@ Class Styles
   list-style: none;
   margin-right: 1em;
   margin-left:50%;
-  text-align:end;
+  text-align: end;
+  z-index: 10;
 }
 
 .settingsBar li:first-child{
   margin-top: 3em;
+  z-index: 10;
 }
 
 .sticky {
@@ -168,6 +171,7 @@ Class Styles
   top: 0;
   width:94%;
   opacity: .98;
+  z-index: 10;
  }
 
 .wideFormat {
@@ -198,6 +202,8 @@ Class Styles
 
 #flexer {
   display: flex;
+  padding-top: 12px;
+  padding-right: 12px;
 }
 
 #headerTitle {
@@ -274,6 +280,7 @@ Class Styles
     padding: .5em 0 0 0;
 
   }
+
   /*************************************
   Class Styles   Media Queries
   **************************************/
@@ -400,9 +407,9 @@ Class Styles
 
   }
 
-#myFigure {
-  width: 48%;
-}
+  #myFigure {
+    width: 50%;
+  }
 
 
   #reqH3 {

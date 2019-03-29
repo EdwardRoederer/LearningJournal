@@ -62,6 +62,7 @@ function myHide() {
        navbar.className += "responsive";
    } else {
      navbar.className = "navbar";
+
    }
  }
 
@@ -72,9 +73,10 @@ function myHide() {
     if (mySettingsVar.className === "settingsBar settingsHide") {
         mySettingsVar.classList.remove("settingsHide");
         mySettingsVar.classList.add("settingsShow");
-
+      
     } else {
     mySettingsVar.classList.remove("settingsShow");
     mySettingsVar.classList.add("settingsHide");
+
     }
   }
