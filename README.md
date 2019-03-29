@@ -1,1 +1,2 @@
-This file name has changed
+This project has essentially been a sandbox for me. I didn't have a clear idea of what I wanted it to be, so I just started working of a few things. With that being said, there are many things I would have done differently. There's a handful of 
+bugs and many incomplete features but I'm going to keep working on this one. I now have more of an idea about what I want it to be now.
