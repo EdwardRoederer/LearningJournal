@@ -10,8 +10,9 @@ Element Styles
 
 body {
   font-family:"Comic Sans MS", verdana, sans-serif;
-  padding: 1em;
   min-width: 320px;
+  padding: 1em;
+
 }
 
 header {
@@ -27,17 +28,17 @@ figure {
 
 textarea {
   background: transparent;
-  overflow: auto;
-  min-height: 400px;
-  max-height: 800px;
-  position: relative;
-  left: 6em;
-  width: 75%;
-  height: 90%;
   border: none;
+  left: 6em;
   line-height: 2;
   font-style: italic;
   font-weight: lighter;
+
+  max-height: 800px;
+  min-height: 400px;
+  overflow: auto;
+  position: relative;
+  width: 75%;
   z-index: auto;
 }
 
